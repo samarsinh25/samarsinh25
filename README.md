@@ -1,7 +1,7 @@
 # 👋 Hey, I’m Samar Salunkhe
 
 > CS Grad • Backend Engineer • Indie AI Dev • LLM Explorer  
-> “I’d rather ship a messy product than perfect nothing.”
+
 
 ---
 
@@ -10,8 +10,8 @@
 - 🧠 Learning Deep Learning by breaking real project code.
 - 💻 Building backend systems using **Go, Redis, PostgreSQL, Docker, AWS**.
 - 🛠️ Projects range from **Auth Systems** to **LLM-Powered DevOps Agents**.
-- 🧘‍♂️ Fighting mental noise, social anxiety, and the *perfectionist trap*.
-- 📚 Into philosophy (Acharya Prashant), chess, calisthenics, and fort trekking.
+
+
 
 ---
 
@@ -49,9 +49,8 @@
 
 ## 🧘‍♂️ Currently Into
 
-- 📚 Rereading *Atomic Habits* but actually applying it this time.
-- 🧠 Learning Deep RL + Calisthenics at the same time (chaos).
-- 🤯 Running mental debugging on anxiety while coding microservices.
+- 🧠 Learning Deep RL .
+
 
 ---
 
@@ -66,3 +65,15 @@
 > “Build brutally. Learn fast. Reflect deeper.”
 
 ---
+
+
+![VSCode](https://img.shields.io/badge/Editor-VSCode-blue?logo=visualstudiocode)
+![Linux](https://img.shields.io/badge/OS-Linux-black?logo=linux)
+![AWS](https://img.shields.io/badge/-AWS-FF9900?logo=amazon-aws)
+
+
+
+![GitHub Streak](https://streak-stats.demolab.com?user=yourusername&theme=default)
+
+
+![snake gif](https://github.com/yourusername/yourusername/blob/output/github-contribution-grid-snake.svg)

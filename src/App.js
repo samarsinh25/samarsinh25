@@ -1,5 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { Github, ExternalLink, Mail, Linkedin, BookOpen, Coffee, Code, MapPin, Heart, Music, Camera, Gamepad2, Mountain, Palette } from 'lucide-react';
+import HarmonicGrid from './HarmonicGrid';
+
+// Add Google Fonts import for Pacifico
+const fontLink = document.createElement('link');
+fontLink.href = 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
+fontLink.rel = 'stylesheet';
+document.head.appendChild(fontLink);
+
+// Add Google Fonts import for Playfair Display
+const playfairFontLink = document.createElement('link');
+playfairFontLink.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap';
+playfairFontLink.rel = 'stylesheet';
+document.head.appendChild(playfairFontLink);
+
+// Add Google Fonts import for Indie Flower
+const indieFontLink = document.createElement('link');
+indieFontLink.href = 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap';
+indieFontLink.rel = 'stylesheet';
+document.head.appendChild(indieFontLink);
+
+// Add Google Fonts import for Dancing Script
+const dancingFontLink = document.createElement('link');
+dancingFontLink.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap';
+dancingFontLink.rel = 'stylesheet';
+document.head.appendChild(dancingFontLink);
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -103,7 +128,17 @@ const Portfolio = () => {
       {/* Header */}
       <header className="max-w-4xl mx-auto px-6 py-8">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-bold">~yagna</h1>
+          <div className="flex items-center gap-3">
+            <h1 
+              className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent drop-shadow-lg"
+              style={{ fontFamily: 'Dancing Script, cursive', letterSpacing: '2px' }}
+            >
+              ~samarsinh
+            </h1>
+            <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
+              <HarmonicGrid />
+            </div>
+          </div>
           <button
             onClick={toggleDarkMode}
             className={`px-3 py-1 border rounded text-sm transition-colors ${
@@ -300,8 +335,5 @@ const Portfolio = () => {
     </div>
   );
 };
-
-
-
 
 export default Portfolio;

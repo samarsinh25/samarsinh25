@@ -8,18 +8,15 @@
     "react-dom": "^18.2.0",
     "web-vitals": "^5.0.3"
   },
-  "homepage": "https://samarsinh.github.io/samarsinh25",
-
+  "homepage": "https://samarsinh25.github.io/samarsinh25",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "vite",
-    "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
-  
+    "deploy": "vite build && vite gh-pages"
   },
   "eslintConfig": {
     "extends": [
@@ -40,13 +37,15 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.21",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "postcss-loader": "^8.1.1",
     "react": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "tailwindcss": "^4.1.11",
-    "typescript": "^4.9.5"
+    "tailwindcss": "^3.4.4",
+    "typescript": "^4.9.5",
+    "vite": "^7.0.2"
   }
 }

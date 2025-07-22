@@ -1,26 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Github, ExternalLink, Mail, Linkedin, BookOpen, Coffee, Code, MapPin, Heart, Music, Camera, Gamepad2, Mountain, Palette } from 'lucide-react';
+import { Github, ExternalLink, Mail, Linkedin, MapPin } from 'lucide-react';
 import HarmonicGrid from './HarmonicGrid';
 
-// Add Google Fonts import for Pacifico
+// Google Fonts imports
 const fontLink = document.createElement('link');
 fontLink.href = 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
 fontLink.rel = 'stylesheet';
 document.head.appendChild(fontLink);
 
-// Add Google Fonts import for Playfair Display
 const playfairFontLink = document.createElement('link');
 playfairFontLink.href = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap';
 playfairFontLink.rel = 'stylesheet';
 document.head.appendChild(playfairFontLink);
 
-// Add Google Fonts import for Indie Flower
 const indieFontLink = document.createElement('link');
 indieFontLink.href = 'https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap';
 indieFontLink.rel = 'stylesheet';
 document.head.appendChild(indieFontLink);
 
-// Add Google Fonts import for Dancing Script
 const dancingFontLink = document.createElement('link');
 dancingFontLink.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap';
 dancingFontLink.rel = 'stylesheet';
@@ -40,86 +37,93 @@ const Portfolio = () => {
     localStorage.setItem('theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
 
-  const experiences = [
-    {
-      company: "Civil Services Prep (UPSC)",
-      period: "jul-2023 – may-2025",
-      role: "full-time preparation",
-      location: "delhi, india"
-    },
-    {
-      company: "Siemens Industry Software",
-      period: "may-2022 – jul-2022", 
-      role: "software developer intern",
-      location: "pune, india"
-    },
-    {
-      company: "Persistent Systems",
-      period: "jun-2022 – jul-2022",
-      role: "cloud & backend intern", 
-      location: "pune, india"
-    },
-    {
-      company: "CakeSoft Technologies",
-      period: "oct-2021 – feb-2022",
-      role: "full stack developer intern",
-      location: "pune, india"
-    }
-  ];
+  // ========== EXPERIENCE ===========
+const experiences = [
+  {
+    company: "Siemens Industry Software (India)",
+    period: "May 2023 – Jul 2023",
+    role: "Software Developer Intern",
+    location: "Pune, India",
+    details: [
+      "Improved Spring Boot pipeline throughput by 15% via async patterns, SQL plan optimization.",
+      "Debugged 5+ automation workflows, reducing backend failures by 12%.",
+      "Validated 10+ REST APIs, built unit tests, ensured Agile delivery w/ Git/JIRA."
+    ]
+  },
+  {
+    company: "Persistent Systems",
+    period: "Jun 2022 – Aug 2022",
+    role: "Software Developer Intern",
+    location: "Pune, India",
+    details: [
+      "Provisioned auto-scaling EC2+NLB infra with Terraform, 99.9% uptime.",
+      "Reduced AWS cost by 20% via compute tuning using CloudWatch.",
+      "Ensured zero-downtime rollouts in multi-env CI/CD pipeline."
+    ]
+  },
+  {
+    company: "CakeSoft Technologies",
+    period: "Oct 2021 – Feb 2022",
+    role: "Full Stack Developer Intern",
+    location: "Pune, India",
+    details: [
+      "Developed Puppeteer scraping engine (Node.js) for 5K+ LinkedIn profiles.",
+      "Automated lead-gen workflows with React, MongoDB, async scraping."
+    ]
+  },
+  {
+    company: "UPSC Civil Services Preparation",
+    period: "Aug 2023 – May 2025",
+    role: "",
+    location: "",
+    details: [
+      "Trained in deep work, fast learning, and high-pressure decisions — now applying them to real-world tech."
+    ]
+  }
+];
 
   const projects = [
     {
-      title: "multi-tenant rbac microservice",
-      description: "golang microservice with 60% auth latency reduction, 100+ tenant support",
-      tech: ["golang", "postgresql", "redis", "docker", "jwt"],
-      links: { github: "#", demo: "#" }
+      title: "Async Notification System with Retry + Rate Limit",
+      description: "Event-driven Spring Boot + AWS SQS FIFO + Redis system for high-volume, fault-tolerant notification delivery, featuring token bucket rate limiting and exponential backoff (10K+/day, <0.1% loss).",
+      tech: ["Java 21", "Spring Boot", "Redis", "AWS SQS FIFO", "Docker", "PostgreSQL"],
+      links: { github: "https://github.com/samarsinh25/async-notifier" }
     },
     {
-      title: "secure s3 upload service", 
-      description: "pre-signed url service with role-based permissions, 70% faster integration",
-      tech: ["golang", "aws s3", "iam", "jwt"],
-      links: { github: "#", demo: "#" }
+      title: "Multi-Tenant RBAC Microservice (Golang)",
+      description: "Production-grade RBAC backend (Golang, PostgreSQL, Redis) enabling 100+ tenant isolation, 10K+ req/min throughput, and 60% auth latency reduction.",
+      tech: ["Go", "Gin", "PostgreSQL", "Redis", "gRPC", "Docker", "JWT", "Swagger"],
+      links: { github: "https://github.com/samarsinh25/multitenant-RBAC" }
     },
     {
-      title: "llm-powered memory agent",
-      description: "rag agent for engineering queries, 92% accuracy, 40% less context switching",
-      tech: ["python", "langchain", "weaviate", "openai", "fastapi"],
-      links: { github: "#", demo: "#" }
+      title: "Authed S3 File Access Service",
+      description: "Golang backend providing secure, token-based access to S3 files with time-bound presigned URLs. Supports role-based visibility, tenant isolation, and temporary document access use cases.",
+      tech: ["Go", "S3", "JWT", "Presigned URLs", "RBAC", "PostgreSQL"],
+      links: { github: "https://github.com/samarsinh25/Authed-S3-Service" }
     },
     {
-      title: "research paper summarization",
-      description: "nlp tool for automatic paper summaries, 60% time savings",
-      tech: ["python", "nltk", "react", "flask"],
-      links: { github: "#", demo: "#" }
+      title: "Engineering Memory Agent (LLM-powered)",
+      description: "LLM-driven DevOps Co-Pilot indexing logs + internal wiki into vector DBs for contextual recall, infra debugging, and team knowledge continuity. Think ChatGPT for your org's backend + pipelines.",
+      tech: ["Python", "LangChain", "LLMs", "Redis", "Chroma", "FastAPI", "Docker"],
+      links: { github: "https://github.com/samarsinh25/engineering-memory-agent" }
+    },
+    {
+      title: "Research Paper Summarization using NLP",
+      description: "AI-powered web app for summarizing dense research using T5, Seq2Seq, LSA; achieved 60%+ time savings across 100+ arXiv/PubMed texts.",
+      tech: ["Python", "React", "Flask", "Huggingface", "NLTK"],
+      links: { github: "https://www.irejournals.com/paper-details/1704569" }
     }
   ];
 
+
   const skills = {
-    "languages": ["c++", "go", "python", "javascript", "java"],
-    "backend": ["gin", "fiber", "node.js", "express.js", "grpc"],
-    "frontend": ["react.js", "tailwindcss", "zustand"],
-    "cloud": ["aws", "docker", "terraform", "kubernetes"],
-    "databases": ["postgresql", "redis", "mysql", "mongodb"],
-    "ai/ml": ["langchain", "transformers", "cnns", "rnns"]
+    "Languages": ["C++", "Go", "Java", "Python", "JavaScript"],
+    "Backend": ["Spring Boot", "Gin (Go)", "REST", "gRPC", "JWT", "Docker", "Terraform"],
+    "Databases & Caching": ["PostgreSQL", "Redis", "MySQL", "MongoDB"],
+    "Cloud & DevOps": ["AWS", "GitHub Actions", "Bash", "Swagger", "CI/CD"],
+    "Frontend": ["React.js", "HTML", "CSS"],
+    "Tools": ["Git", "Postman", "IntelliJ", "Chrome DevTools"]
   };
-
-  const books = [
-    { title: "the pragmatic programmer", author: "david thomas", status: "reading" },
-    { title: "designing data-intensive applications", author: "martin kleppmann", status: "completed" },
-    { title: "clean architecture", author: "robert c. martin", status: "completed" },
-    { title: "system design interview", author: "alex xu", status: "reading" },
-    { title: "sapiens", author: "yuval noah harari", status: "completed" },
-    { title: "atomic habits", author: "james clear", status: "reading" }
-  ];
-
-  const hobbies = [
-    { name: "reading", icon: BookOpen, description: "philosophy, sci-fi, tech books" },
-    { name: "music", icon: Music, description: "lo-fi, classical, indie rock" },
-    { name: "photography", icon: Camera, description: "street photography, landscapes" },
-    { name: "gaming", icon: Gamepad2, description: "strategy games, indie titles" },
-    { name: "hiking", icon: Mountain, description: "weekend trails, nature walks" },
-    { name: "art", icon: Palette, description: "digital art, sketching" }
-  ];
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
@@ -129,7 +133,7 @@ const Portfolio = () => {
       <header className="max-w-4xl mx-auto px-6 py-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <h1 
+            <h1
               className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent drop-shadow-lg"
               style={{ fontFamily: 'Dancing Script, cursive', letterSpacing: '2px' }}
             >
@@ -142,8 +146,8 @@ const Portfolio = () => {
           <button
             onClick={toggleDarkMode}
             className={`px-3 py-1 border rounded text-sm transition-colors ${
-              darkMode 
-                ? 'border-green-400 hover:bg-green-400 hover:text-black' 
+              darkMode
+                ? 'border-green-400 hover:bg-green-400 hover:text-black'
                 : 'border-black hover:bg-black hover:text-white'
             }`}
           >
@@ -161,36 +165,44 @@ const Portfolio = () => {
               hi there
             </p>
             <p className={`mb-4 ${darkMode ? 'text-green-300' : 'text-gray-700'}`}>
-              i am samarsinh salunkhe, a computer engineering graduate from pict, pune.
-              currently balancing upsc preparation with building cool tech stuff.
-            </p>
-            <p className={`mb-4 ${darkMode ? 'text-green-300' : 'text-gray-700'}`}>
-              i build scalable backend systems, work with ai/ml, and enjoy solving complex problems.
-              my projects have achieved real impact - from 60% latency reduction to 92% ai accuracy.
-            </p>
-            <p className={`${darkMode ? 'text-green-300' : 'text-gray-700'}`}>
-              i should not talk so much about myself if there were anybody else whom i knew well.
-            </p>
+  Computer Engineering grad with multi-domain SDE internships at Siemens, Persistent, CakeSoft. 
+  Fast learner; ships maintainable, scalable code across backend (Go, Spring Boot), cloud and full-stack systems.
+  Passionate about system design, automation, AI for real impact. Always open to tough problems and fast learning.
+</p>
           </div>
-          
+         
           <div className="flex gap-4 text-sm">
-            <a href="https://github.com/samarsinh25" target="_blank" rel="noopener noreferrer" 
-               className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
+            <a href="https://github.com/samarsinh25" target="_blank" rel="noopener noreferrer"
+              className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
               <Github size={16} />
               github
             </a>
             <a href="https://linkedin.com/in/samarsinh25" target="_blank" rel="noopener noreferrer"
-               className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
+              className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
               <Linkedin size={16} />
               linkedin
             </a>
             <a href="mailto:samarsinh25@gmail.com"
-               className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
+              className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
               <Mail size={16} />
               email
             </a>
+
+            {/* NEW SOCIAL LINKS */}
+            <a href="https://x.com/thisisss25/" target="_blank" rel="noopener noreferrer"
+              className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
+              <ExternalLink size={16} />
+              twitter
+            </a>
+            <a href="https://www.goodreads.com/user/show/190417579-samarsinh-salunkhe" target="_blank" rel="noopener noreferrer"
+              className={`flex items-center gap-2 ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
+              <ExternalLink size={16} />
+              goodreads
+            </a>
           </div>
         </section>
+
+        
 
         {/* Work Experience */}
         <section className="mb-12">
@@ -208,6 +220,13 @@ const Portfolio = () => {
                     {exp.period}
                   </span>
                 </div>
+                {exp.details && exp.details.length > 0 && (
+                  <ul className={`ml-6 mt-2 mb-1 list-disc ${darkMode ? 'text-green-300' : 'text-gray-600'} text-xs`}>
+                    {exp.details.map((line, idx) => (
+                      <li key={idx}>{line}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>
@@ -222,11 +241,9 @@ const Portfolio = () => {
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-semibold">{project.title}</h3>
                   <div className="flex gap-2">
-                    <a href={project.links.github} className={`text-xs ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
+                    <a href={project.links.github} target="_blank" rel="noopener noreferrer"
+                      className={`text-xs ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
                       source
-                    </a>
-                    <a href={project.links.demo} className={`text-xs ${darkMode ? 'text-green-400 hover:text-green-300' : 'text-blue-600 hover:text-blue-800'} underline`}>
-                      demo
                     </a>
                   </div>
                 </div>
@@ -266,50 +283,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Reading List */}
-        <section className="mb-12">
-          <h2 className="text-lg font-bold mb-6">reading list</h2>
-          <div className="space-y-2">
-            {books.map((book, index) => (
-              <div key={index} className={`border-l-2 pl-4 ${darkMode ? 'border-green-400' : 'border-gray-300'}`}>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="font-semibold text-sm">{book.title}</h3>
-                    <p className={`text-xs ${darkMode ? 'text-green-300' : 'text-gray-600'}`}>
-                      by {book.author}
-                    </p>
-                  </div>
-                  <span className={`text-xs px-2 py-1 rounded ${
-                    book.status === 'completed' 
-                      ? (darkMode ? 'bg-green-900 text-green-300' : 'bg-green-100 text-green-800')
-                      : (darkMode ? 'bg-yellow-900 text-yellow-300' : 'bg-yellow-100 text-yellow-800')
-                  }`}>
-                    {book.status}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Hobbies */}
-        <section className="mb-12">
-          <h2 className="text-lg font-bold mb-6">hobbies</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {hobbies.map((hobby, index) => (
-              <div key={index} className={`border-l-2 pl-4 ${darkMode ? 'border-green-400' : 'border-gray-300'}`}>
-                <div className="flex items-center gap-2 mb-1">
-                  <hobby.icon size={16} />
-                  <h3 className="font-semibold text-sm">{hobby.name}</h3>
-                </div>
-                <p className={`text-xs ${darkMode ? 'text-green-300' : 'text-gray-600'}`}>
-                  {hobby.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Contact */}
         <section>
           <h2 className="text-lg font-bold mb-6">get in touch</h2>
@@ -321,9 +294,6 @@ const Portfolio = () => {
               <MapPin size={14} />
               <span>pune, maharashtra, india</span>
             </div>
-            <p className={`text-xs mt-2 ${darkMode ? 'text-green-300' : 'text-gray-500'}`}>
-              available for remote work & open to relocation
-            </p>
           </div>
         </section>
       </main>

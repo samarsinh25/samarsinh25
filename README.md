@@ -1,7 +1,5 @@
-<!-- Profile README for samarsinh25 -->
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=22D3EE&center=true&vCenter=true&width=700&lines=Hi+there!+I'm+Samarsinh+Salunkhe+%F0%9F%91%8B;Backend+Engineer+%7C+AI%2FML+Enthusiast+%7C+UPSC+Prep;Building+impactful+tech+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=22D3EE&center=true&vCenter=true&width=700&lines=Hi+there!+I'm+Samarsinh+Salunkhe+%F0%9F%91%8B;Backend+Engineer+%7C+AI%2FML+Builder+%7C+UPSC+Strategist;Building+real+tech+with+real+impact+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -16,94 +14,76 @@
 ### 👨‍💻 About Me
 
 - 🎓 Computer Engineering graduate from **PICT, Pune**
-- 🏛️ Currently preparing for **UPSC** while building cool tech
-- 🛠️ Backend, AI/ML, and scalable systems enthusiast
-- 🚀 Achieved: 60% latency reduction, 92% AI accuracy in projects
-- 📍 Pune, Maharashtra, India (open to remote & relocation)
+- 🎯 Honors in Data Science
+- 🛠️ Backend-heavy dev with projects in infra and AI agents
+- 📚 started learning and building
 
 ---
 
 ### 💼 Work Experience
 
 | Company                        | Role                      | Period                | Location      |
-|---------------------------------|---------------------------|-----------------------|--------------|
-| Civil Services Prep (UPSC)      | Full-time Preparation     | Jul 2023 – May 2025   | Delhi, India |
-| Siemens Industry Software       | Software Developer Intern | May 2022 – Jul 2022   | Pune, India  |
-| Persistent Systems              | Cloud & Backend Intern    | Jun 2022 – Jul 2022   | Pune, India  |
-| CakeSoft Technologies           | Full Stack Dev Intern     | Oct 2021 – Feb 2022   | Pune, India  |
+|-------------------------------|---------------------------|-----------------------|---------------|
+| Siemens Industry Software      | Software Developer Intern | May 2023 – Jul 2023   | Pune, India   |
+| Persistent Systems             | Cloud & Backend Intern    | Jun 2022 – Aug 2022   | Pune, India   |
+| CakeSoft Technologies          | Full Stack Dev Intern     | Oct 2021 – Feb 2022   | Pune, India   |
 
 ---
 
 ### 🚀 Projects
 
-- **Multi-tenant RBAC Microservice**  
-  _Golang microservice with 60% auth latency reduction, 100+ tenant support_  
-  <kbd>Golang</kbd> <kbd>PostgreSQL</kbd> <kbd>Redis</kbd> <kbd>Docker</kbd> <kbd>JWT</kbd>
+- **📨 Async Notification System**  
+  _SQS + Redis + token bucket retries for 10K+/day event notifications_  
+  [`Code`](https://github.com/samarsinh25/async-notifier) • <kbd>Java</kbd> <kbd>Spring Boot</kbd> <kbd>AWS</kbd>
 
-- **Secure S3 Upload Service**  
-  _Pre-signed URL service with role-based permissions, 70% faster integration_  
-  <kbd>Golang</kbd> <kbd>AWS S3</kbd> <kbd>IAM</kbd> <kbd>JWT</kbd>
+- **🔐 Multi-Tenant RBAC Microservice**  
+  _Golang microservice with 100+ tenant isolation, 60% latency cut via Redis TTL_  
+  [`Code`](https://github.com/samarsinh25/multitenant-RBAC) • <kbd>Go</kbd> <kbd>PostgreSQL</kbd> <kbd>gRPC</kbd> <kbd>JWT</kbd>
 
-- **LLM-powered Memory Agent**  
-  _RAG agent for engineering queries, 92% accuracy, 40% less context switching_  
-  <kbd>Python</kbd> <kbd>LangChain</kbd> <kbd>Weaviate</kbd> <kbd>OpenAI</kbd> <kbd>FastAPI</kbd>
+- **📦 Authenticated S3 File Service**  
+  _Presigned URL service with role-based token auth, scoped access, and RBAC guardrails_  
+  [`Code`](https://github.com/samarsinh25/Authed-S3-Service) • <kbd>Go</kbd> <kbd>S3</kbd> <kbd>JWT</kbd> <kbd>PresignedURL</kbd>
 
-- **Research Paper Summarization**  
-  _NLP tool for automatic paper summaries, 60% time savings_  
-  <kbd>Python</kbd> <kbd>NLTK</kbd> <kbd>React</kbd> <kbd>Flask</kbd>
+- **🧠 Engineering Memory Agent (LLM-Powered)**  
+  _RAG agent with vector DB recall for DevOps and infra queries, 92% QA accuracy_  
+  [`Code`](https://github.com/samarsinh25/engineering-memory-agent) • <kbd>LangChain</kbd> <kbd>Python</kbd> <kbd>FastAPI</kbd>
 
----
-
-### 🛠️ Technical Skills
-
-| Languages   | Backend         | Frontend           | Cloud         | Databases           | AI/ML                |
-|-------------|-----------------|--------------------|---------------|---------------------|----------------------|
-| C++, Go, Python, JavaScript, Java | Gin, Fiber, Node.js, Express.js, gRPC | React.js, TailwindCSS, Zustand | AWS, Docker, Terraform, Kubernetes | PostgreSQL, Redis, MySQL, MongoDB | LangChain, Transformers, CNNs, RNNs |
+- **🧾 Research Paper Summarizer**  
+  _T5 + LSA model to extract core summaries from dense arXiv/PubMed papers_  
+  [`Paper`](https://www.irejournals.com/paper-details/1704569) • <kbd>React</kbd> <kbd>Python</kbd> <kbd>NLTK</kbd>
 
 ---
 
-### 📚 Reading List
+### 🛠️ Tech Stack
 
-- _The Pragmatic Programmer_ (reading)
-- _Designing Data-Intensive Applications_ (completed)
-- _Clean Architecture_ (completed)
-- _System Design Interview_ (reading)
-- _Sapiens_ (completed)
-- _Atomic Habits_ (reading)
+| 🧠 Languages | 🔧 Backend | 🎨 Frontend | ☁️ Cloud & DevOps | 💾 Databases | 🧬 AI / ML |
+|-------------|-----------|------------|-------------------|--------------|------------|
+| C++, Go, Python, Java, JS | Spring Boot, Gin, gRPC, REST, JWT | React, TailwindCSS, Zustand | AWS, Docker, GitHub Actions, Terraform | PostgreSQL, Redis, MySQL, MongoDB | LangChain, Transformers, LLMs, CNNs |
 
 ---
 
-### 🎨 Hobbies
+### 📫 Contact & Links
 
-| 📖 Reading | 🎵 Music | 📷 Photography | 🎮 Gaming | 🥾 Hiking | 🎨 Art |
-|------------|---------|---------------|----------|----------|--------|
-| Philosophy, Sci-fi, Tech books | Lo-fi, Classical, Indie Rock | Street, Landscapes | Strategy, Indie | Weekend trails, Nature walks | Digital art, Sketching |
-
----
-
-### 📫 Get in Touch
-
-<p align="center">
-  <a href="mailto:samarsinh25@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/samarsinh25"><img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/samarsinh25"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" /></a>
-</p>
+- ✉️ **Email**: [samarsinh25@gmail.com](mailto:samarsinh25@gmail.com)
+- 🧠 **LinkedIn**: [linkedin.com/in/samarsinh25](https://linkedin.com/in/samarsinh25)
+- 💻 **GitHub**: [github.com/samarsinh25](https://github.com/samarsinh25)
+- 🐦 **Twitter (X)**: [x.com/thisisss25](https://x.com/thisisss25/)
+- 📚 **Goodreads**: [Samarsinh on Goodreads](https://www.goodreads.com/user/show/190417579-samarsinh-salunkhe)
+- 🌐 **Portfolio**: [samarsinh25.github.io/samarsinh25](https://samarsinh25.github.io/samarsinh25)
 
 ---
+
+### 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=samarsinh25&show_icons=true&theme=radical" alt="GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=samarsinh25&theme=radical" alt="GitHub Streak" />
 </p>
 
+---
+
+### 🏆 Trophies
+
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=samarsinh25&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="Trophies" />
 </p>
-
----
-
-<details>
-<summary>✨ <b>Fun Fact</b></summary>
-<br>
-<i>"I should not talk so much about myself if there were anybody else whom I knew well."</i>
-</details> 

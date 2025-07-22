@@ -1,6 +1,7 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=22D3EE&center=true&vCenter=true&width=700&lines=Hi+there!+I'm+Samarsinh+Salunkhe+%F0%9F%91%8B;Backend+Engineer+%7C+AI%2FML+Builder+%7C+UPSC+Strategist;Building+real+tech+with+real+impact+%F0%9F%9A%80" alt="Typing SVG" />
-</p>
+<h1 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>
+  Samarsinh Salunkhe
+</h1>
+
 
 <p align="center">
   <a href="https://github.com/samarsinh25"><img src="https://img.shields.io/github/followers/samarsinh25?label=GitHub&style=social" /></a>

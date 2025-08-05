@@ -3,6 +3,7 @@
 </h1>
 
 
+
 <p align="center">
   <a href="https://github.com/samarsinh25"><img src="https://img.shields.io/github/followers/samarsinh25?label=GitHub&style=social" /></a>
   <a href="https://linkedin.com/in/samarsinh25"><img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white" /></a>
@@ -27,7 +28,7 @@
 |-------------------------------|---------------------------|-----------------------|---------------|
 | Siemens Industry Software      | Software Developer Intern | May 2023 – Jul 2023   | Pune, India   |
 | Persistent Systems             | Cloud & Backend Intern    | Jun 2022 – Aug 2022   | Pune, India   |
-| CakeSoft Technologies          | Full Stack Dev Intern     | Oct 2021 – Feb 2022   | Pune, India   |
+| CakeSoft Technologies          | Full Stack Dev Intern     | Oct 2022 – Feb 2023   | Pune, India   |
 
 ---
 
